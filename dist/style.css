@@ -1,9 +1,13 @@
+body {
+  font-family: arial;
+}
+
 .graph-box{
   border-top: 6px solid #333;
   box-shadow: 0 4px 8px 0 rgba(207, 207, 207, 0.2), 0 6px 20px 0 rgba(207, 207, 207, 0.2);
   color:#333;
   background-color: #eee;
-  width: 600px;
+  width: 400px;
   padding: 10px;
   margin: 30px auto;
 }

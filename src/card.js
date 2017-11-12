@@ -13,24 +13,15 @@ class Card {
     if (this.selected) {
       ctx.fillStyle = 'red';
     }
-    ctx.fillRect(30 + (this.position * 10) + this.x, canvasHeight - this.height, 5, this.height);
+    ctx.fillRect(40 + (this.position * 15) + this.x, canvasHeight - this.height, 10, this.height);
     ctx.restore();
   }
 
-  moveUp() {
-    if (this.y > -100) {
-      this.y -= 1;
-      this.moving = true;
-    } else {
-      this.moving = false;
-    }
-  }
-
   moveToPosition() {
-    if (((this.position * 10) + this.x) > (this.nextPosition * 10)) {
+    if (((this.position * 15) + this.x) > (this.nextPosition * 15)) {
       this.x -= 1;
       this.moving = true;
-    } else if (((this.position * 10) + this.x) < (this.nextPosition * 10)) {
+    } else if (((this.position * 15) + this.x) < (this.nextPosition * 15)) {
       this.x += 1;
       this.moving = true;
     } else {
