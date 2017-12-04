@@ -44,7 +44,7 @@ class SortAnimation {
 
   render() {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    this.ctx.fillStyle = 'rgb(99,138,127)';
+    this.ctx.fillStyle = 'rgb(59, 84, 167)';
     this.cards.forEach((card) => {
       card.render(this.ctx, this.canvas.height);
     });

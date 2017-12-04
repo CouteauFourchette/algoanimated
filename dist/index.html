@@ -6,6 +6,20 @@
   <title>Document</title>
 </head>
 <body>
+    <pre class="prettyprint lang-javascript">
+      function bubbleSort(cards) { 
+        let sorted = true; 
+        for (let i = 1; i < cards.length; i +=1 ) { 
+          if (cards[i].height < cards[i - 1].height) { 
+            swapCard(cards, i, i - 1); 
+            sorted=false; 
+          } 
+        } 
+        if (!sorted) { 
+          bubbleSort(cards); 
+        }
+      }
+    </pre>
     <div class="graph-box">
       <div class="top-bar">
         <h2>BubbleSort</h2>
@@ -27,6 +41,7 @@
     </div>
     <canvas id="quicksortCanvas"></canvas> <br />
   </div>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=javascript&amp;skin=desert"></script>
 <script src="bundle.js"></script>
 </body>
 </html>

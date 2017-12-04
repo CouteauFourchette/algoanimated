@@ -11,7 +11,7 @@ class Card {
   render(ctx, canvasHeight) {
     ctx.save();
     if (this.selected) {
-      ctx.fillStyle = 'red';
+      ctx.fillStyle = 'rgb(146, 30, 84)';
     }
     ctx.fillRect(40 + (this.position * 15) + this.x, canvasHeight - this.height, 10, this.height);
     ctx.restore();
